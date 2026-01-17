@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#check {
+    display: none;
+    text-align: center;
+    button {
+        width: 70px;
+        height: 30px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        background-color: green;
+        color: #fff;
+        font-size: 10px;
+    }
+}
+
+h4 {
+    display: inline-block;
+}
+
+.container {
+    gap: 10%;
+}
+
+
+#tab2 {
+    float: left;
+    border-collapse: collapse;
+    margin: 10px;
+    & .field {
+        background-color: #fff;
+    }
+    .subhover:hover {
+        opacity: .5;
+    }
+}
+
+td {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+    background-color: #777;
+}
+
+.letters {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    border: none;
+    resize: none;
+    outline: none;
+    font-weight: bold;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        background-color: rgb(0, 179, 255);
+        border: 1px solid red;
+        border-radius: 10%;
+        transition: all .5s;
+    }
+}
+
+.index {
+    position: absolute;
+    font-size: .5rem;
+    padding-left: 1px;
+    color: blue;
+}
+
+#output {
+    max-width: 640px;
+    margin: 10px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 640px) {
+    #tab2 {
+        margin-right: 20px;
+    }
+    #tab2 td {
+        width: 20px;
+        height: 20px;
+    }
+    #tab2 .letters {
+        font-size: 1.15rem;
+    }
+    #output {
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 991px) {
+    #tab2 {
+        margin-right: 30px;
+    }
+    #tab2 td {
+        width: 24px;
+        height: 24px;
+    }
+    #tab2 .letters {
+        font-size: 1.3rem;
+    }
+    #output {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    #tab2 td {
+        width: 36px;
+        height: 36px;
+    }
+    #tab2 .letters {
+        float: none;
+        font-size: 1.5rem;
+    }
+    #output {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    margin: 0;
+}
+
+#hcontent,
+#vcontent {
+    margin-bottom: 7px;
+}

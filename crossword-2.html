@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Crossword-2</title>
+  </head>
+
+  <body>
+    <h1>Библейский кроссворд</h1>
+    <div id="check"><button onclick="checked()">Проверить</button></div>
+    <div class="container">
+      <table id="tab2" style="display: block">
+        <tbody>
+          <tr>
+            <td class="field" x="0" y="0" vlen="8" vi="0" v="1">
+              <div class="index">1</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Х"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" x="0" y="2" vlen="4" vi="0" v="2">
+              <div class="index">2</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="П"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="field" x="0" y="5" vlen="8" vi="0" v="3">
+              <div class="index">3</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Л"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" x="0" y="7" vlen="8" vi="0" v="4">
+              <div class="index">4</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="М"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" x="1" y="0" hlen="8" hi="0" vi="1" v="1" h="5">
+              <div class="index">5</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="И"
+              ></textarea>
+            </td>
+            <td class="field" hi="1" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Р"
+              ></textarea>
+            </td>
+            <td class="field" vi="1" hi="2" v="2" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+            <td class="field" hi="3" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Д"
+              ></textarea>
+            </td>
+            <td class="field" hi="4" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="И"
+              ></textarea>
+            </td>
+            <td class="field" vi="1" hi="5" v="3" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="А"
+              ></textarea>
+            </td>
+            <td class="field" hi="6" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Н"
+              ></textarea>
+            </td>
+            <td class="field" hi="7" vi="1" v="4" h="5">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Е"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" vi="2" v="1">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Д"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="2" v="2">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Л"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="field" vi="2" v="3">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="С"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="2" v="4">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Р"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" x="3" y="0" hlen="4" hi="0" vi="3" v="1" h="6">
+              <div class="index">6</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+            <td class="field" hi="1" h="6">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Д"
+              ></textarea>
+            </td>
+            <td class="field" hi="2" vi="3" v="2" h="6">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Е"
+              ></textarea>
+            </td>
+            <td class="field" hi="3" h="6">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Д"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="3" v="3">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Т"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="3" v="4">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="З"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" vi="4" v="1">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Н"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="field" x="4" y="4" hlen="4" hi="0" h="7">
+              <div class="index">7</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Д"
+              ></textarea>
+            </td>
+            <td class="field" hi="1" vi="4" v="3" h="7">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+            <td class="field" hi="2" h="7">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Д"
+              ></textarea>
+            </td>
+            <td class="field" hi="3" vi="4" v="4" h="7">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" x="5" y="0" hlen="4" hi="0" vi="5" v="1" h="8">
+              <div class="index">8</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+            <td class="field" hi="1" h="8">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Р"
+              ></textarea>
+            </td>
+            <td class="field" hi="2" x="5" y="2" vlen="3" vi="0" h="8" v="9">
+              <div class="index">9</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Н"
+              ></textarea>
+            </td>
+            <td class="field" hi="3" h="8">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="А"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="5" v="3">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Ч"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="5" v="4">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="С"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" vi="6" v="1">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="В"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="1" v="9">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class=""></td>
+            <td class="field" vi="6" v="3">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="К"
+              ></textarea>
+            </td>
+            <td class=""></td>
+            <td class="field" vi="6" v="4">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Т"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td class="field" x="7" y="0" hlen="8" hi="0" vi="7" v="1" h="10">
+              <div class="index">10</div>
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="О"
+              ></textarea>
+            </td>
+            <td class="field" hi="1" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Т"
+              ></textarea>
+            </td>
+            <td class="field" vi="2" hi="2" v="9" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="В"
+              ></textarea>
+            </td>
+            <td class="field" hi="3" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Е"
+              ></textarea>
+            </td>
+            <td class="field" hi="4" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Ч"
+              ></textarea>
+            </td>
+            <td class="field" vi="7" hi="5" v="3" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="А"
+              ></textarea>
+            </td>
+            <td class="field" hi="6" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Т"
+              ></textarea>
+            </td>
+            <td class="field" hi="7" vi="7" v="4" h="10">
+              <textarea
+                class="letters"
+                maxlength="1"
+                onkeyup="this.value = this.value.toUpperCase();"
+                data-letter="Ь"
+              ></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="output" style="display: block">
+        <div class="content" id="hcontent">
+          <h4>по горизонтали:</h4>
+          <span><b>5.</b> Сторонники Ирода Антипы </span
+          ><span
+            ><b>6.</b> Пророк Господень; после победы Факея над иудеями, убедил
+            израильтян оказать милость пленным иудеям и вернуть их обратно </span
+          ><span><b>7.</b> Вифлеемлянин, отец Елканы </span
+          ><span
+            ><b>8.</b> Иевусеянии из Иерусалима, который имел гумно на горе
+            Мория </span
+          ><span><b>10.</b> Возражать и говорить </span>
+        </div>
+        <div class="content" id="vcontent">
+          <h4>по вертикали:</h4>
+          <span><b>1.</b> То, что принадлежало Хидону </span
+          ><span><b>2.</b> Участок земли, предназначенный для посевов </span
+          ><span><b>3.</b> Птица,которая строит гнездо на крыше </span
+          ><span><b>4.</b> Этим словом называется все нечистое по закону </span
+          ><span><b>9.</b> Город священников в колене Вениаминовом </span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
+</html>
