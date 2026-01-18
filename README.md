@@ -1,2 +1,2 @@
 # crosswords
-biblical crosswords
+biblical crosswords for every day
