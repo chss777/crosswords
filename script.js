@@ -31,12 +31,12 @@ function cursor() {
     }
 }
 
-if (window.innerWidth < 991 && tab2.rows[0].cells.length < 12) {
-    tds.forEach(td => {
-        td.style.width = '24px';
-        td.style.height = '24px';
-    })      
-}
+// if (window.innerWidth < 991 && tab2.rows[0].cells.length < 12) {
+//     tds.forEach(td => {
+//         td.style.width = '24px';
+//         td.style.height = '24px';
+//     })      
+// }
 
 function control() {
     let sum = 0;

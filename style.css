@@ -91,13 +91,13 @@ td {
 @media (max-width: 640px) {
     #tab2 {
         margin-right: 20px;
-    }
-    #tab2 td {
-        width: 20px;
-        height: 20px;
-    }
-    #tab2 .letters {
-        font-size: 1.15rem;
+        & td {
+            width: 20px;
+            height: 20px;
+        }
+        & .letters {
+            font-size: 1rem;
+        }
     }
     #output {
         font-size: 1.15rem;
