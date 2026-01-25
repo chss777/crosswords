@@ -57,6 +57,7 @@ td {
     resize: none;
     outline: none;
     font-weight: bold;
+    overflow: hidden;
     &:hover {
         cursor: pointer;
         transform: scale(1.2);
