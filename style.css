@@ -29,6 +29,11 @@ h4 {
     gap: 10%;
 }
 
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #tab2 {
     float: left;
@@ -74,6 +79,62 @@ td {
     padding-left: 1px;
     color: blue;
 }
+
+#arrows {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    & button {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        font-size: 1rem;
+        border: 1px solid blue;
+        border-radius: 2px;
+        color: #00f;
+        background-color: green;
+        &:hover {
+            transform: scale(1.1);
+            opacity: .8;
+            transition: all .3s;
+        }
+    }
+}
+
+/* #joystick {
+    margin: 10px;
+    text-align: center;
+} */
+
+/* .triangle {
+    width: 0;
+    height: 0;
+    margin: 5px;
+}   
+
+#left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid green;
+}
+#up {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid green;
+}
+#down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid green;
+}
+#right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid green;
+} */
 
 #output {
     max-width: 640px;
