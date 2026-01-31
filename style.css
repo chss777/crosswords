@@ -25,20 +25,19 @@ h4 {
     display: inline-block;
 }
 
-.container {
+/* #container {
     gap: 10%;
-}
+} */
 
 #main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px
 }
 
 #tab2 {
-    float: left;
     border-collapse: collapse;
-    margin: 10px;
     & .field {
         background-color: #fff;
     }
@@ -141,17 +140,26 @@ td {
     margin: 10px;
 }
 
-@media (max-width: 400px) {
-    .container {
+@media (max-width: 390px) {
+    #container {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        gap: 10px;
         flex-wrap: wrap;
     }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 391px) and (max-width: 640px) {
+    #container {
+        display: block;
+    }
+    #main {
+        float: left;
+        margin: 5px;
+    }
     #tab2 {
-        margin-right: 20px;
+        margin: 0;
         & td {
             width: 20px;
             height: 20px;
@@ -166,8 +174,9 @@ td {
 }
 
 @media (min-width: 641px) and (max-width: 991px) {
-    #tab2 {
-        margin-right: 30px;
+    #main {
+        float: left;
+        margin: 30px;
     }
     #tab2 td {
         width: 24px;
@@ -181,10 +190,23 @@ td {
     }
 }
 
+@media (min-width: 440px) {
+    #arrows {
+        display: none;
+    }
+    @media (max-height: 440px) {
+        #arrows {
+            display: flex;
+        }
+    }
+}
+
+
 @media (min-width: 992px) {
-    .container {
+    #container {
         display: flex;
         justify-content: center;
+        gap: 30px;
         margin-top: 60px;
     }
     #tab2 td {
