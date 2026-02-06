@@ -9,6 +9,8 @@ const left = document.getElementById('left');
 const up = document.getElementById('up');
 const right = document.getElementById('right');
 const down = document.getElementById('down');
+const circle = document.getElementById('circle');
+const joistick = document.getElementById('joistick');
 
 
 var active;
@@ -110,3 +112,36 @@ function checked() {
 // });
 
 tab2.addEventListener('click', cursor);
+
+function dragElement(element) {
+    if (circle) {
+        circle.onmousedown = (ev) => {
+            ev = ev || window.Event;
+            ev.preventDefault();
+
+            let x = ev.clientX;
+            let y = ev.clientY;
+
+            window.onmousemove = (ev) => {
+                ev = ev || window.Event;
+                ev.preventDefault();
+
+                x = x - ev.clientX;
+                y = y - ev.clientY;
+
+                element.style.left = `${element.offsetLeft - x}px`;
+                element.style.top = `${element.offsetTop - y}px`;
+
+                x = ev.clientX;
+                y = ev.clientY;
+
+                window.onmouseup = () => {
+                    window.onmousemove = null;
+                    window.onmouseup = null;
+                }
+            };
+        }
+    }
+}
+
+dragElement(joistick);

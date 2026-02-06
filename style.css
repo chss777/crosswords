@@ -29,12 +29,6 @@ h4 {
     gap: 10%;
 } */
 
-#main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px
-}
 
 #tab2 {
     border-collapse: collapse;
@@ -44,6 +38,7 @@ h4 {
     .subhover:hover {
         opacity: .5;
     }
+    margin: 10px;
 }
 
 td {
@@ -79,68 +74,88 @@ td {
     color: blue;
 }
 
-#arrows {
-    width: 200px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    & button {
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-        font-size: 1rem;
-        border: 1px solid blue;
-        border-radius: 2px;
-        color: #00f;
-        background-color: green;
-        &:hover {
-            transform: scale(1.1);
-            opacity: .8;
-            transition: all .3s;
-        }
-    }
-}
-
-/* #joystick {
-    margin: 10px;
-    text-align: center;
-} */
-
-/* .triangle {
-    width: 0;
-    height: 0;
-    margin: 5px;
-}   
-
-#left {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 20px solid green;
-}
-#up {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid green;
-}
-#down {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 20px solid green;
-}
-#right {
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 20px solid green;
-} */
-
 #output {
     max-width: 640px;
     margin: 10px;
 }
 
+#joistick {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 90px;
+    height: 90px;
+    border: 2px dashed green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: .7;
+}
+
+#joistick:hover {
+    opacity: 1;
+}
+
+#left,
+#up,
+#right,
+#down {
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid green;
+}
+
+#left {
+    left: 0%;
+    top: 50%;
+    transform: translateY(-50%) rotate(270deg); 
+}
+
+#up {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+}
+
+#right {
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+#down {
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+}
+#circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 187, 255);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (max-width: 390px) {
+    h1 {
+        text-align: left;
+        font-size: 1.1rem;
+    }
     #container {
         display: flex;
         justify-content: center;
@@ -148,24 +163,23 @@ td {
         gap: 10px;
         flex-wrap: wrap;
     }
+    .letters {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 391px) and (max-width: 640px) {
     #container {
         display: block;
     }
-    #main {
-        float: left;
-        margin: 5px;
-    }
     #tab2 {
-        margin: 0;
+        float: left;
         & td {
             width: 20px;
             height: 20px;
         }
         & .letters {
-            font-size: 1rem;
+            font-size: 1.1rem;
         }
     }
     #output {
@@ -173,8 +187,22 @@ td {
     }
 }
 
+@media (min-width: 440px) {
+    #joistick {
+        display: none;
+    }
+    @media (max-height: 440px) {
+        #joistick {
+            display: flex;
+        }
+        #tab2 {
+            float: left;
+        }
+    }
+}
+
 @media (min-width: 641px) and (max-width: 991px) {
-    #main {
+    #tab2 {
         float: left;
         margin: 30px;
     }
@@ -189,18 +217,6 @@ td {
         font-size: 1.3rem;
     }
 }
-
-@media (min-width: 440px) {
-    #arrows {
-        display: none;
-    }
-    @media (max-height: 440px) {
-        #arrows {
-            display: flex;
-        }
-    }
-}
-
 
 @media (min-width: 992px) {
     #container {
