@@ -86,11 +86,8 @@ function cursor() {
 // }
 
 function control() {
-    let sum = 0;
-    for (let i=0; i<letters.length; i++) {
-        sum += letters[i].value.length;
-    }
-    if (sum == letters.length) {
+    let mas = Array.from(letters);
+    if (mas.every(item => item.value.length > 0)) {
         check.style.display = 'block';
     }
 }
