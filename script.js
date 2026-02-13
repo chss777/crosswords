@@ -145,3 +145,10 @@ function dragElement(element) {
 }
 
 dragElement(joistick);
+
+joistick.addEventListener('touchmove', e => {
+    let touch = e.targetTouches[0];
+    joistick.style.left = `${touch.pageX}px`;
+    joistick.style.top = `${touch.pageY}px`;
+    e.preventDefault(); // Предотвращает скролл
+}, false);
