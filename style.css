@@ -23,12 +23,8 @@ h1 {
 
 h4 {
     display: inline-block;
+    margin: 0;
 }
-
-/* #container {
-    gap: 10%;
-} */
-
 
 #tab2 {
     border-collapse: collapse;
@@ -236,10 +232,6 @@ td {
     #output {
         font-size: 1.5rem;
     }
-}
-
-h4 {
-    margin: 0;
 }
 
 #hcontent,
